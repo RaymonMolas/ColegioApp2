@@ -9,16 +9,16 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSgte;
+    Button btnIniciar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnSgte = (Button)findViewById(R.id.btnPantalla2);
+        btnIniciar = (Button)findViewById(R.id.btnIniciar);
 
-        btnSgte.setOnClickListener(new View.OnClickListener() {
+        btnIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

@@ -9,31 +9,32 @@ import android.widget.Button;
 
 public class Main2Activity extends AppCompatActivity {
 
-    Button btnVolver, btnSalir;
+    Button btnSesion, btnRegist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        btnVolver = (Button)findViewById(R.id.btnVolver);
-        btnSalir = (Button)findViewById(R.id.btnSalir);
+        btnSesion = (Button)findViewById(R.id.btnSesion);
+        btnRegist = (Button)findViewById(R.id.btnRegist);
 
-        btnVolver.setOnClickListener(new View.OnClickListener() {
+        btnSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent volver1 = new Intent(Main2Activity.this, MainActivity.class);
-                startActivity(volver1);
+                Intent sesion1 = new Intent(Main2Activity.this, Main3Activity.class);
+                startActivity(sesion1);
 
             }
 
         });
-        btnSalir.setOnClickListener(new View.OnClickListener() {
+        btnRegist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                finish();
+                Intent regis1 = new Intent(Main2Activity.this, MainActivity.class);
+                startActivity(regis1);
 
             }
         });    }
