@@ -33,9 +33,10 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent regis1 = new Intent(Main2Activity.this, MainActivity.class);
+                Intent regis1 = new Intent(Main2Activity.this, Main4Activity.class);
                 startActivity(regis1);
 
             }
-        });    }
+        });
+    }
 }
